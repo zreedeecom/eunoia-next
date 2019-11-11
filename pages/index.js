@@ -1,74 +1,74 @@
 import React from 'react'
 import Head from 'next/head'
 import Nav from '../components/nav'
+import Hero from '../components/hero'
+import SectionHeading from '../components/sectionHeading'
+import Footer from '../components/footer'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
-import SectionHeading from '../components/sectionHeading'
 
 const Home = () => {
   return (
-  <div>
-    <Head>
-      <title>Home</title>
-      <link rel='icon' href='/favicon.ico' />
-      {/* <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet" /> */}
-    </Head>
+    <div>
+      <Head>
+        <title>Home</title>
+        <link rel="icon" href="/favicon.ico" />
+        <link
+          href="https://fonts.googleapis.com/css?family=Montserrat:300,400|Playfair+Display&display=swap"
+          rel="stylesheet"
+        />
+      </Head>
 
-    <Nav />
-    <div className="container-fluid" style={{ height: `80vh` }}>
-      <div
-        className="row"
-        style={{
-          background: `linear-gradient(0deg, rgba(100, 204, 201, 0.7), rgba(100, 204, 201, 0.7)), url('/images/allen-taylor-486829-unsplash.jpg')`,
-          height: `100%`
-        }}
-      >
-          <div className="container">
-            <div className="row justify-content-center">
-              <div className="col-5 text-center">
-                <img className="hero-logo" width="100%" src="/images/eunoia-logo.svg" alt="Eunoia - A favor de la infancia Logo"/>
-              </div>
+      <Nav />
+      <Hero />
+
+      <section className="section01">
+        <div className="container">
+          <div className="row">
+            <div className="col-12">
+              <SectionHeading title="Qué hacemos" blob="pink" />
             </div>
-            <div className="row justify-content-center">
-              <div className="col-10 text-center mt-5">
-                <h1 className="hero-tagline">Hacer de la infancia su etapa más feliz es nuestra prioridad</h1>
-              </div>
+            <div className="col-8 offset-2 mt-5">
+              <p className="body-text">
+                Eunoia es una organización sin animo de lucro cuya misión es ayudar a los niños a
+                que tengan una infancia mejor. Lo que nos diferencia sobre otras ONG principalmente
+                es que a finales de cada año estudiamos las diferentes opciones a la hora de elegir
+                a que fin dedicaremos la recaudación del año siguiente. Valoramos la urgencia, el
+                nivel de necesidad, la cobertura actual y qué asociaciones están implicadas en las
+                causas propuestas, con toda esta información escojemos el fin y la asociación con la
+                que colaboraremos durante el año entrante. Primero nos aseguramos de que la
+                trayectoria de dicha asociación es sólida y está comprometida al 100% con la causa
+                para así garantizar que los aportes de nuestros asociados y patrocinadores no se
+                perderán en el camino y que realmente sepan que están ayudando.
+              </p>
             </div>
           </div>
         </div>
-      <div className="row position-relative" style={{ top: -200 }}>
-        <svg width="100%" height="200px" viewBox="0 0 1440 200" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M0 193V200H1440V0.772766C1196.23 89.6243 968.189 102.428 705.578 117.172C499.707 128.731 272.592 141.482 0 193Z" fill="#fff" />
-        </svg>
-      </div>
+      </section>
+
+      <style jsx>{`
+        .body-text {
+          font-family: "Montserrat", sans-serif;
+          font-weight: 300;
+          font-size: 18px;
+          line-height: 2.3rem;
+        }
+        .section01 {
+          background: url(/images/blobs01.svg) right top no-repeat;
+        }
+      `}</style>
+      <style jsx global>{`
+        :root {
+          --eunoia-green: #64ccc9;
+          --eunoia-blue: #009cde;
+          --eunoia-pink: #e2acd7;
+          --eunoia-white: #f2ebe7;
+          --eunoia-black: #373a36;
+        }
+      `}</style>
+      <Footer />
     </div>
-
-    <div className="container">
-      <div className="row">
-        <div className="col">
-          <SectionHeading />
-        </div>
-      </div>
-    </div>
-
-    <style jsx>{`
-    @import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
-
-    .hero-logo {
-      margin-top: 8rem;
-    }
-    .hero-tagline {
-      font-family: Playfair Display;
-      font-weight: normal;
-      font-size: 3rem;
-      line-height: 67px;
-      text-align: center;
-      color: #fff;
-    }
-    `}</style>
-  </div>
-
-  )
+  );
 }
 
 export default Home

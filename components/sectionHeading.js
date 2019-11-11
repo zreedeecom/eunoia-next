@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SectionHeading = () => {
+const SectionHeading = props => {
 
   const blobs = {
     pink: {
@@ -8,8 +8,39 @@ const SectionHeading = () => {
   }
 
   return (
-    <h2 className="section-heading">Section Heading</h2>
-  )
+    <>
+      <h2 className="section-heading position-relative mt-5">
+        <span className={`blob blob-${props.blob}`}></span>
+        {props.title}
+      </h2>
+
+      <style jsx>{`
+        .section-heading {
+          font-family: "Playfair Display", serif;
+          font-size: 3.56rem;
+        }
+        .section-heading::after {
+          content: "";
+          position: absolute;
+          background-image: url("/images/blob-pink.svg");
+          background-size: 100%;
+          width: 177px;
+          height: 174px;
+          top: -35px;
+          left: -80px;
+          z-index: -1;
+        }
+        .blob {
+        }
+        .blob-pink {
+        }
+        .blob-green {
+        }
+        .blob-blue {
+        }
+      `}</style>
+    </>
+  );
 }
 
 export default SectionHeading

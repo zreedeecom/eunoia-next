@@ -8,21 +8,29 @@ const Nav = () => {
       <div className="container">
         <ul className="nav nav-fill justify-content-center">
           <li className="nav-item">
-            <Link className="nav-link active" href="#"><a>Qué hacemos</a></Link>
+            <Link href="#">
+              <a className="nav-link active">Qué hacemos</a>
+            </Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" href="#"><a>Transparencia</a></Link>
+            <Link href="#">
+              <a className="nav-link">Transparencia</a>
+            </Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" href="#"><a>Quiénes somos</a></Link>
+            <Link href="#">
+              <a className="nav-link">Quiénes somos</a>
+            </Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" href="#"><a>Ayudanos</a></Link>
+            <Link href="#">
+              <a className="nav-link">Ayudanos</a>
+            </Link>
           </li>
         </ul>
       </div>
     </nav>
-  )
+  );
 }
 
 /*
