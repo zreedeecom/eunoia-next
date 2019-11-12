@@ -3,7 +3,7 @@ import React from "react";
 const Hero = () => {
   return (
     <>
-      <div className="container-fluid" style={{ height: `70vh` }}>
+      <div className="container-fluid" style={{ height: `80vh` }}>
         <div
           className="row"
           style={{

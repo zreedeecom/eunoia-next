@@ -30,16 +30,62 @@ const Home = () => {
             </div>
             <div className="col-8 offset-2 mt-5">
               <p className="body-text">
-                Eunoia es una organización sin animo de lucro cuya misión es ayudar a los niños a
-                que tengan una infancia mejor. Lo que nos diferencia sobre otras ONG principalmente
-                es que a finales de cada año estudiamos las diferentes opciones a la hora de elegir
-                a que fin dedicaremos la recaudación del año siguiente. Valoramos la urgencia, el
-                nivel de necesidad, la cobertura actual y qué asociaciones están implicadas en las
-                causas propuestas, con toda esta información escojemos el fin y la asociación con la
-                que colaboraremos durante el año entrante. Primero nos aseguramos de que la
-                trayectoria de dicha asociación es sólida y está comprometida al 100% con la causa
-                para así garantizar que los aportes de nuestros asociados y patrocinadores no se
-                perderán en el camino y que realmente sepan que están ayudando.
+                Eunoia es una organización sin animo de lucro cuya misión es
+                ayudar a los niños a que tengan una infancia mejor. Lo que nos
+                diferencia sobre otras ONG principalmente es que a finales de
+                cada año estudiamos las diferentes opciones a la hora de elegir
+                a que fin dedicaremos la recaudación del año siguiente.
+                Valoramos la urgencia, el nivel de necesidad, la cobertura
+                actual y qué asociaciones están implicadas en las causas
+                propuestas, con toda esta información escojemos el fin y la
+                asociación con la que colaboraremos durante el año entrante.
+                Primero nos aseguramos de que la trayectoria de dicha asociación
+                es sólida y está comprometida al 100% con la causa para así
+                garantizar que los aportes de nuestros asociados y
+                patrocinadores no se perderán en el camino y que realmente sepan
+                que están ayudando.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section02">
+        <div className="container">
+          <div className="row">
+            <div className="col-12 text-center">
+              <SectionHeading title="Transparencia" />
+            </div>
+            <div className="col-8 offset-2 mt-5">
+              <p className="body-text text-center">
+                En Eunoia pensamos que es de vital importancia que personas y
+                empresas que colaboran con nosotros, sepan en cada momento dónde
+                y como se destinan los fondos recaudados por eso hemos creado el
+                "compromiso de transparencia". Mediante este compromiso de
+                transparencia se garantiza al colaborador una visual semestral
+                de las cuentas de Eunoia. De esta forma cualquier socio o
+                colaborador podrá hacer un seguimiento del balance económico de
+                Eunoia.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section03">
+        <div className="container">
+          <div className="row">
+            <div className="col-12">
+              <SectionHeading title="Quiénes somos" blob="green" />
+            </div>
+            <div className="col-8 offset-2 mt-5">
+              <p className="body-text">
+                Eunoia lo compone un pequeño equipo de cinco personas muy
+                comprometidas.<br/><br/>
+                Cada uno de los miembros combina su trabajo con
+                este proyecto invirtiendo tiempo y fondos de forma desinteresada
+                para estar cada vez más cerca del objetivo común, proporcionar
+                una infacia mejor al máximo número de niños posible.
               </p>
             </div>
           </div>
@@ -55,6 +101,21 @@ const Home = () => {
         }
         .section01 {
           background: url(/images/blobs01.svg) right top no-repeat;
+          padding-bottom: 100px;
+          padding-top: 50px;
+        }
+        .section02 {
+          background: url(/images/section2bg-365364941.jpg),
+            rgba(55, 58, 54, 0.8);
+          background-size: cover;
+          color: var(--eunoia-white);
+          padding-bottom: 70px;
+          padding-top: 20px;
+        }
+        .section03 {
+          /* background: url(/images/blobs01.svg) right top no-repeat; */
+          padding-bottom: 100px;
+          padding-top: 100px;
         }
       `}</style>
       <style jsx global>{`

@@ -21,8 +21,8 @@ const Footer = () => {
             <p>
               <br />
               <br />
-              Eunoia está inscrita en el Registro Nacional de Asociaciones con Numero:
-              CV-01-060595-A
+              Eunoia está inscrita en el Registro Nacional de Asociaciones con
+              Numero: CV-01-060595-A
             </p>
           </div>
           <div className="col-3">
@@ -36,13 +36,20 @@ const Footer = () => {
               <br />- Politica de privacidad
             </p>
           </div>
-          <div className="col-2">
+          <div className="col-2 align-self-center">
             <p>
-              FB PAGE LINK HERE
+              <a href="https://fb.me/eunoiaong" target="_blank">
+                <img
+                  src="/images/siguenos-fb.svg"
+                  alt="Sígue a Eunoia en Facebook (botón)"
+                />
+              </a>
             </p>
           </div>
           <div className="col-12 text-center text-uppercase">
-            <p>todos los derechos reservados ® EUNOIA - a favor de la infancia 2019</p>
+            <p>
+              todos los derechos reservados ® EUNOIA - a favor de la infancia · 2019
+            </p>
           </div>
           <div className="col-12 text-center">
             <p className="dev">
