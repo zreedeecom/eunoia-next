@@ -6,6 +6,7 @@ import SectionHeading from '../components/sectionHeading'
 import Footer from '../components/footer'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
+import ProfilePic from '../components/profilePic'
 
 const Home = () => {
   return (
@@ -81,12 +82,36 @@ const Home = () => {
             <div className="col-8 offset-2 mt-5">
               <p className="body-text">
                 Eunoia lo compone un pequeño equipo de cinco personas muy
-                comprometidas.<br/><br/>
-                Cada uno de los miembros combina su trabajo con
-                este proyecto invirtiendo tiempo y fondos de forma desinteresada
-                para estar cada vez más cerca del objetivo común, proporcionar
-                una infacia mejor al máximo número de niños posible.
+                comprometidas.
+                <br />
+                <br />
+                Cada uno de los miembros combina su trabajo con este proyecto
+                invirtiendo tiempo y fondos de forma desinteresada para estar
+                cada vez más cerca del objetivo común, proporcionar una infacia
+                mejor al máximo número de niños posible.
               </p>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-8 offset-2 mt-3">
+
+                <div className="row">
+                  <ProfilePic
+                    name="David Carranza"
+                    role="Presidente"
+                    src="/images/pic-david.jpg"
+                  />
+                  <ProfilePic
+                    name="David Carranza"
+                    role="Presidente"
+                    src="/images/pic-david.jpg"
+                  />
+                  <ProfilePic
+                    name="David Carranza"
+                    role="Presidente"
+                    src="/images/pic-david.jpg"
+                  />
+                </div>
             </div>
           </div>
         </div>
@@ -105,8 +130,12 @@ const Home = () => {
           padding-top: 50px;
         }
         .section02 {
-          background: url(/images/section2bg-365364941.jpg),
-            rgba(55, 58, 54, 0.8);
+          background: linear-gradient(
+              to right,
+              rgba(55, 58, 54, 0.8),
+              rgba(55, 58, 54, 0.8)
+            ),
+            url(/images/section2bg-365364941.jpg) center center;
           background-size: cover;
           color: var(--eunoia-white);
           padding-bottom: 70px;
